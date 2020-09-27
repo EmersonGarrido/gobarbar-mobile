@@ -21,8 +21,8 @@ const AuthRoutes: React.FC = () => (
       // headerTitle: "GoBarber"
     }}
   >
-    <Auth.Screen name="SignUp"  component={SignUp}/> 
     <Auth.Screen name="SignIn" component={SignIn}/> 
+    <Auth.Screen name="SignUp"  component={SignUp}/> 
   </Auth.Navigator>
 )
 

@@ -1,13 +1,14 @@
 import React from 'react';
 import { Image, KeyboardAvoidingView, Platform, View, ScrollView } from 'react-native'
 import * as S from './styles';
-
+import { useNavigation } from '@react-navigation/native'
 import Button from '../../components/Button'
 import Input from '../../components/Input'
 
 import logoImg from '../../assets/logo.png'
 
 const SignUp: React.FC = () => {
+  const navigation = useNavigation()
   return (
     <>
     <KeyboardAvoidingView 
@@ -35,7 +36,7 @@ const SignUp: React.FC = () => {
     </S.Container>
     </ScrollView>
     </KeyboardAvoidingView>
-    <S.CreateAccountButton>
+    <S.CreateAccountButton onPress={() => navigation.navigate("SignIn")}>
       <S.Icon name="arrow-left" size={20} color="#F4EDE8"/>
       <S.CreateAccountButtonText>Voltar para o login</S.CreateAccountButtonText>
     </S.CreateAccountButton>
