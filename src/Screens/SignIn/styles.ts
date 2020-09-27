@@ -1,5 +1,4 @@
 import styled from 'styled-components/native';
-import { RectButton } from 'react-native-gesture-handler'
 import Icons from 'react-native-vector-icons/Feather'
 
 export const Container = styled.View`
